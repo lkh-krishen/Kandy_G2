@@ -1,0 +1,90 @@
+body{
+	background-image: url("../images/promobg.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+	background-size: cover;
+}
+
+#back{
+	padding-top: 15px;
+	padding-right: 26px;
+	padding-bottom: 15px;
+	padding-left: 26px;
+	background-color: #B8BBD8;
+	cursor: pointer;
+	color: white;
+}
+
+#back:hover{
+	background-color: #A3A4C1;
+}
+
+h1{
+	border: 1px solid white;
+	font-family: sans-serif;
+	text-align: center;
+	margin-top: auto;
+	margin-left: 35%;
+	margin-right: 35%;
+	padding: 15px;
+	color: white;
+}
+
+div{
+	width: 50%;
+	border: 1px solid white;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	color: white;
+	font-family: sans-serif;
+}
+
+label {
+	margin-left: 15%;
+}
+
+input[type = "text"]{
+	margin-left: 38%;
+}
+
+input[type = "date"]{
+	margin-left: 42%
+}
+
+#dropdown{
+	margin-left: 41.5%;
+}
+
+textarea{
+	margin-left: 15%;
+}
+
+input[type = "submit"]{
+	padding-top: 15px;
+	padding-right: 28px;
+	padding-bottom: 15px;
+	padding-left: 28px;
+	background-color: #B8BBD8;
+	color: white;
+	cursor: pointer;
+	margin-left: 73.5%;
+}
+
+#cnfrm{
+	margin-left: 54%;
+}
+
+#info{
+	background-color: blue;
+	color: white;
+	border-radius: 50%;
+	margin-left: 83%;
+}
+
+p{
+	margin-left: 71.5%;
+	font-size: 12px;
+}

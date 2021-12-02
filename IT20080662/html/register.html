@@ -1,0 +1,58 @@
+<!DOCTYPE HMTL>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/registerStyles.css">
+		<script src="../js/registerScript.js"></script>
+	</head>
+	
+	<head>
+	<!--add a title-->
+		<title> WOWme ONLINE RECIPE MANAGEMENT SYSTEM </title>
+	</head>
+		
+	<!-- add a logo -->
+		<center><img src="../images/logo.jpg" alt="logo"><center>
+	
+	<body>
+		
+	<!-- add a image -->
+	<div class="column" >
+		<img src="../images/submarine.jpg" width="650px" height="350px" style="margin-right:70%">
+		<img src="../images/milkshake.jpg" width="650px" height="400px">
+	</div>
+	
+	<!-- add registration form -->		
+	<div class="editlog" class="column">
+	<form onSubmit = "return checkPassword(this)" action="../php/registerProcess.php" method="post"> 
+	<br>
+		<label> User ID  </label> <br>
+		<input type="text" name ="userid" required><br><br>
+		
+		<label> Name  </label> <br>
+		<input type="text" name ="name" required><br><br>
+		
+		<label> E-mail Address </label> <br>
+		<input type="email" name ="mail" pattern="[a-z0-9._%+-]+@[a-z0-9._%+-]+\.[a-z]{2,3}$" placeholder="alibaba@my.com" required><br><br>
+
+		<label> Password </label><br>
+		<input type="password" id="pwd" name="pswrd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}" title="Must contain at least one number, one uppercase, lowercase letter, and minimum 5 or more characters" required> <br><br>
+	
+		<label> Confirm Password </label><br>
+		<input type="password" id="rpwd" name="PasswordC" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 5 or more characters" required> <br><br>
+		
+		<input type="checkbox" id="acc" name="acc" onclick="enableButton()" selected>
+		<label>Accept privacy policy and terms</label><br><br>
+	
+		<input type="submit" id="btnsubmit" name="btnsubmit" value="Sign Up" disabled> <br>
+		
+		Already a member? <a href="../php/start.php" style="font-size:18px; color:lightblue;"> Sign in</a>
+		
+	</form>
+	</div>
+
+	</body>
+</html>
+
+
+
+

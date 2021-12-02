@@ -1,0 +1,51 @@
+.headbox{
+	float:left;
+	margin-left:12%;
+}
+
+div{
+	background-color:#f1f1f1;
+	width:26%;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0;
+}
+
+input[type="text"],input[type="email"],input[type="password"]{
+	width:60%;
+	margin-left:25px;
+	margin-right:50px;
+	border-radius:8px;
+	padding: 8px;
+	border: 1px solid #ccc;
+}
+
+input[type="checkbox"]{
+	margin-left:20px;
+}
+
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	margin-left:5px;
+	margin-bottom:5px;
+	width:40%;
+	padding:5px;
+	font-size:17px;
+}
+
+.log {
+  float: right;
+  margin-left:100px;
+  margin-top:1%;
+}
+
+.logo{
+	margin-left:42%;
+}
+
+.log_new{
+	float:right;
+	margin-left:80%;
+	margin-top:-20%;
+}

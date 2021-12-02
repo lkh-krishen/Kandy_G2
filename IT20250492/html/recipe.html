@@ -1,0 +1,70 @@
+<?php 
+	require "config.php" ;
+?>
+<html>
+	<head>
+		<title>WOWme - Online Recipe Management System</title>
+		<link rel = "stylesheet" href = "../styles/homeStyles.css">
+		<link rel = "stylesheet" href = "../styles/styles.css">
+		
+	
+	<script>
+	function closeWin(){
+	var myWindow;
+
+	myWindow.close();
+	}	
+	</script>
+	</head>
+	<body>
+		<img src = "images/avatarplaceholder.png" alt = "Avatar" id = "avatar">
+		<ul class = "list">
+			<li class = "list"><a href = "#" class = "list"><button type = "button">Manage Profile</button></a></li>
+			<li class = "list"><a href = "#" class = "list"><button type = "button" id = "btn">Sign Out</button></a></li>
+		</ul>
+		<center><img src = "images/logo.jpg" alt = "Logo" id = "logo"></center>
+		<ul class="menu">
+			<li class="menu"><a href="home.html" class = "menu">Home</a></li>
+			<li class="menu"><a href="recipe.php" class = "menu">Recipes</a></li>
+			<li class="menu"><a href="#" class = "menu">Top Rated</a></li>
+			<li class="menu"><a href="#" class = "menu">Feedback</a></li>
+			<li class="menu"><a href="promo.html" class = "menu">Promotions</a></li>
+		</ul>
+	<br><br> 
+    <input id="search" type="text" placeholder="Find a recipe">
+	<br><br>
+	
+	<div id="mySidenav" class="sidenav">
+			<a href="add.html" id="add">Add Recipe</a>
+	</div>
+
+
+		<div class="card">
+		  <!--<img src="../images/recipt.jpg" alt="Denim Jeans" style="width:28% ; height:370px" align="left"> -->
+		  <h1><?php echo $row["RecipeId"]. " – " . $row["Name"] ?></h1>
+		  <div class="content"><h4>Ingredients</h4><br><p><?php echo $row["Ingredients"] ?></p></div>
+		  <div><h4><b>Steps</b></h4><br><p><?php echo $row["Steps"]?></p></div><br>
+		  <div><p><b>Owner name</b></p></div>
+		</div>
+		<br><br>
+				
+			<!--echo $row["RecipeId"]. " – " . $row["Name"]. " – " . $row["Ingredients"]. " – " . $row["Steps"] --> 
+		
+
+		<footer>
+			<br>
+			<center><p>Contact us:</p></center>
+			<center><p>Phone - +94 81 222 4868</p></center>
+			<center><p>E-mail - wowme@gmail.com</p></center>
+			<br>
+		</footer>
+</body>
+<footer>
+			<br>
+			<center><p>Contact us:</p></center>
+			<center><p>Phone - +94 81 222 4868</p></center>
+			<center><p>E-mail - wowme@gmail.com</p></center>
+			<br>
+		</footer>
+
+</html>

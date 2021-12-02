@@ -1,0 +1,92 @@
+body{
+	background-image: url("../images/siteBackg.jpeg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+	background-size: cover;
+}
+
+ul.menu{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #333;
+	overflow: hidden;
+	font-family: sans-serif;
+}
+
+li.menu{
+	float: left;
+}
+
+a.menu{
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+a.menu:hover{
+	background-color: #b2beb5;
+}
+
+ul.list{
+	list-style-type: none;
+	margin-left: 92%;
+	padding: 0;
+}
+
+#logo{
+	width: 15%;
+}
+
+#avatar{
+	width: 5%;
+	margin-left: 95%;
+	display: inline;
+}
+
+#btn{
+	padding-right: 41%;
+}
+
+#recipes{
+	width: 50%;
+}
+
+#toprated{
+	width: 50%;
+}
+
+#promotions{
+	width: 50%;
+}
+
+#feedback{
+	width: 50%;
+}
+
+#wowmetxt{
+	font-family: sans-serif;
+	font-size: 33px;
+	color: white;
+	font-weight: bold;
+}
+
+.tabletxt{
+	font-family: sans-serif;
+	font-size: 24px;
+	color: white;
+	font-weight: bold;
+}
+
+footer{
+	background-color: black;
+	font-family: sans-serif;
+	color: white;
+	font-size: 12px;
+}

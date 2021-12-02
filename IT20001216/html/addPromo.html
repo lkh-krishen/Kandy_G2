@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+	
+		<title>WOWme - Online Recipe Management System</title> <!-- Title displayed in page's tab -->
+		
+		<link rel = "stylesheet" href = "../css/addPromoStyles.css">
+		
+		<script src = "../js/addPromoScript.js"></script>
+		
+	</head>
+	
+	<body>
+	
+		<a href = "../php/promoPanel.php"><button type = "button" id = "back">Back</button></a> <!-- Back button to go back to "Promotions Panel" page-->
+		
+		<h1>Add Promotion</h1>
+		
+		<div>
+		
+			<form action = "../php/addPromoProccess.php" method = "POST"> <!-- Form for adding promotion details to the database -->
+			
+				<label>Title*</label>
+				<input type = "text" name = "title" id = "ttl" pattern = "[a-zA-Z ]{1,25}" required><br><br>
+				
+				<label>Category*</label>
+				<select name = "category" id = "dropdown">
+					<option value = "Chef">Chef</option>
+					<option value = "Culinary-school">Culinary-school</option>
+					<option value = "Event">Event</option>
+				</select><br><br>
+				
+				<label>Date*</label>
+				<input type = "date" name = "date" required><br><br>
+				
+				<label>Details*</label><br>
+				<textarea rows="10" name = "details" cols="64" required maxlength = "100"></textarea><br><br>
+				
+				<label id = "cnfrm">Yes, we wish promote this*</label> <!-- Checkbox which when activated will enable the submit button through javascript -->
+				<input type = "checkbox" id = "confirm" onclick = "enableButton()"><br><br>
+				
+				<input type = "submit" value = "Add" id = "add" disabled> <!-- Submit button to send data to database -->
+				
+			</form>
+			
+			<br>
+			
+			<button type = "button" id = "info" onclick = "displayInfo('info')">?</button>
+			<p id = "sntnc">Click for more info</p>
+			
+		</div>
+		
+	</body>
+	
+</html>

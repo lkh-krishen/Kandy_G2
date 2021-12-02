@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/manageStyles.css">
+</head>
+
+<body>
+	
+	<img src = "../images/avatarplaceholder.png" alt = "Avatar" id = "avatar">
+		
+		<!-- add button -->
+		<ul class = "list">
+			<li class = "list"><a href = "../html/manageProfile.html" class = "list"><button type = "button">Manage Profile</button></a></li>
+			<li class = "list"> <class = "list"><button type = "button" id = "btn" onclick="location.href'Start.php'">Sign Out</button></a></li>
+		</ul>
+		<!-- add a logo -->
+		<center><img src = "../images/logo.jpg" alt = "Logo" id = "logo"></center>
+		
+		<!-- add a horizontal menu -->
+		<ul class="menu">
+			<li class="menu"><a href="../php/home.php" class = "menu">Home</a></li>
+			<li class="menu"><a href="../../IT20001216/php/promo.php" class = "menu">Recipes</a></li>
+			<li class="menu"><a href="../../IT20219352/html/TopRated.html" class = "menu">Top Rated</a></li>
+			<li class="menu"><a href="../../IT20246082/php/feedback.php" class = "menu">Feedback</a></li>
+			<li class="menu"><a href="../../IT20001216/php/promo.php" class = "menu">Promotions</a></li>
+		</ul>
+		<br>
+
+		<button class="btnbtn" id="btnedit" onclick="location.href='../php/editProfile.php'" style="width:30%"> Edit Profile </button> <br><br><br>
+
+<button class="btnbtn" onclick="document.getElementById('id01').style.display='block'" style="width:30%">Delete Account</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+<?php 							 
+						include_once"config.php"	;
+																				
+							$sql = "select * from  user";
+							$result = $conn->query($sql);
+							
+							if($result->num_rows > 0){
+		//read data
+		while($row = $result->fetch_assoc()){
+		//Read and utilize the row data
+				
+						
+?>	
+ <form class="modal-content" action="../php/deleteProcess.php" method="post">
+    <div class="container">
+		<label>User Name :</label>
+      <input type="text" name ="Dname">
+	  
+	  <label>User ID :</label>
+	  <input type="text" name="Userid">
+    
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btncancel">Cancel</button> &nbsp &nbsp  &nbsp &nbsp 
+         <button type="button" class="btndelete" name="btndelete"> <a href = '../php/start.php?GetID=<?php  echo $$row['UserID']?>'> Delete</button></a>
+      </div>
+    </div>
+  </form>
+</div>
+<?php			
+			}
+	}
+	else
+	{
+		echo "no results";
+	}
+	
+?>
+<script>
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

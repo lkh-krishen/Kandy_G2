@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WOWme - Online Recipe Management System</title>
+		<link rel = "stylesheet" href = "../styles/homeStyles.css">
+		<link rel = "stylesheet" href = "../styles/styles.css">
+		<link rel = "stylesheet" href = "../styles/add.css">
+		<script src="../js/recipe.js">
+	<script>
+	function closeWin(){
+	var myWindow;
+
+	myWindow.close();
+	}	
+	</script>
+	
+	</head>
+	<body>
+		<img src = "../images/avatarplaceholder.png" alt = "Avatar" id = "avatar">
+		<ul class = "list">
+			<li class = "list"><a href = "#" class = "list"><button type = "button">Manage Profile</button></a></li>
+			<li class = "list"><a href = "#" class = "list"><button type = "button" id = "btn">Sign Out</button></a></li>
+		</ul>
+		<center><img src = "../images/logo.jpg" alt = "Logo" id = "logo"></center>
+		<ul class="menu">
+			<li class="menu"><a href="home.html" class = "menu">Home</a></li>
+			<li class="menu"><a href="recipe.php" class = "menu">Recipes</a></li>
+			<li class="menu"><a href="#" class = "menu">Top Rated</a></li>
+			<li class="menu"><a href="#" class = "menu">Feedback</a></li>
+			<li class="menu"><a href="promo.html" class = "menu">Promotions</a></li>
+		</ul>
+		<br> 
+	<br><br>
+		<img src="../images/logo.jpg" align="right" id="img1">
+	<br>
+	<div>
+		<form class="form" action="addrecipe.php" method="POST">
+			<label>Recipe name </label>
+			<input type="text" name="field1" id="rname" placeholder="eg:Biriyani">
+			<br><br>
+			<label>Ingredients</label>
+			<textarea name="field2" id="ingredients" placeholder="-rice  -water ..etc"></textarea>
+			<br><br>
+			<label>Steps</label>
+			<textarea name="field3" id="Steps" placeholder="-clean rice with water..etc"></textarea>
+			<br><br>
+			<label>Date</label>
+			<input type="date" name="field4">
+			<br><br>
+			<input type="submit" value="submit" name="btn">	
+		</form>
+	</div>
+	
+</body>
+<footer>
+			<br>
+			<center><p>Contact us:</p></center>
+			<center><p>Phone - +94 81 222 4868</p></center>
+			<center><p>E-mail - wowme@gmail.com</p></center>
+			<br>
+		</footer>
+</html>

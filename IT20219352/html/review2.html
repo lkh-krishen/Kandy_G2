@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>WOWme - Online Recipe Management System</title>
+	<link rel = "stylesheet" href = "../css/homeStyles.css">
+	<script type="text/javascript" src="../js/myScript.js"></script>
+</head>
+<img src = "../images/avatarplaceholder.png" alt = "Avatar" id = "avatar">
+		<ul class = "list">
+			<li class = "list"><a href = "#" class = "list"><button type = "button">Manage Profile</button></a></li>
+			<li class = "list"><a href = "#" class = "list"><button type = "button" id = "btn">Sign Out</button></a></li>
+		</ul>
+		<center><img src = "../images/logo.jpg" alt = "Logo" id = "logo"></center>
+
+
+
+	<body>
+	
+	<ul class="menu">
+			<li class="menu"><a href="#" class = "menu">Home</a></li>
+			<li class="menu"><a href="#" class = "menu">Recipes</a></li>
+			<li class="menu"><a href="TopRated.html" class = "menu">Top Rated</a></li>
+			<li class="menu"><a href="#" class = "menu">Feedback</a></li>
+			<li class="menu"><a href="#" class = "menu">Promotions</a></li>
+		</ul>
+	
+	
+	<form name="myForm"  class="f1" action="../php/process2.php" onsubmit="return validateForm()" method="POST" required >
+	<br>
+	<br>
+	
+	<br>
+	<h3 class="label2" >Enter Username</h3>
+	<br>
+	<h3 class="label6" >Enter Review</h3>
+	<br>
+	<textarea name="fname" class="label3" cols="55" rows="7"></textarea>
+	<br>
+	<input type="text" name="txtname" class="inputname" autocomplete="off" onclick="MyFunction();"  >
+	
+	<input type="submit"  class="label4" onclick="MyFunction();"  value="  Submit  ">
+  
+  
+  
+	<h3 class="label5" >Give Rating</h3>
+	
+   <!--page requires star symbol for rating system-->
+	 <!--  ★ -->
+	
+	
+	 <div class="rate" >
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	</form>
+
+	<!--footer-->
+	<footer class="footer">
+			
+	</footer>
+</body>
+</html>

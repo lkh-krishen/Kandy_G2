@@ -1,0 +1,382 @@
+body{
+	background-image: url(../images/sitebg.jpg);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+	background-size: cover;
+}
+
+ul.menu{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #333;
+	overflow: hidden;
+	font-family: sans-serif;
+}
+
+li.menu{
+	float: left;
+}
+
+a.menu{
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+a.menu:hover{
+	background-color: #b2beb5;
+}
+
+ul.list{
+	list-style-type: none;
+	margin-left: 92%;
+	padding: 0;
+}
+
+#logo{
+	width: 15%;
+}
+
+#avatar{
+	width: 5%;
+	margin-left: 95%;
+	display: inline;
+}
+
+#btn{
+	padding-right: 41%;
+}
+
+#recipes{
+	width: 50%;
+}
+
+#toprated{
+	width: 50%;
+}
+
+#promotions{
+	width: 50%;
+}
+
+#feedback{
+	width: 50%;
+}
+
+#wowmetxt{
+	font-family: sans-serif;
+	font-size: 33px;
+	color: white;
+	font-weight: bold;
+}
+
+.tabletxt{
+	font-family: sans-serif;
+	font-size: 24px;
+	color: white;
+	font-weight: bold;
+}
+
+footer{
+	background-color: black;
+	font-family: sans-serif;
+	color: white;
+	font-size: 12px;
+}
+
+.form1{
+  position: absolute;
+  right: 400px;
+  margin: 114px;
+  max-width: 1000px;
+  padding: 16px;
+  bottom:196px;
+  font-size:30px;
+}	
+
+#div1{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+#p1{
+	font-size:40px;
+	text-align: center;
+	color:white;
+}
+
+#p2{
+	font-size:30px;
+	text-align: center;
+	color:white;
+}
+
+#p4{
+	font-size:15px;
+	text-align: center;
+	color:white;	
+}
+
+#p3{
+	color:white;
+	font-size:20px;
+	text-align: center;
+	padding-left: 10px;
+}
+
+#btn1{
+	background: black;
+	position: absolute;
+	color:white;
+	font-size:20px;
+	text-align: center;
+	left: 700px;
+	cursor: pointer;
+	overflow:hidden;
+}
+
+
+#btn4{
+	background: rgba(0,0,0,0.5);
+	color:white;
+}
+
+#btn2{
+	background: black;
+	position: absolute;
+	color:white;
+	font-size:20px;
+	text-align: center;
+	left: 770px;
+	cursor: pointer;
+	overflow:hidden;
+}
+
+#btn3{
+	background: black;
+	position: absolute;
+	color:white;
+	font-size:20px;
+	text-align: center;
+	left: 650px;
+	cursor: pointer;
+	overflow:hidden;
+}
+
+#btn5{
+	background: black;
+	position: absolute;
+	color:white;
+	font-size:20px;
+	text-align: center;
+	left: 640px;
+	cursor: pointer;
+	overflow:hidden;
+}
+
+
+.form-area{
+	background: rgba(0,0,0,0.5);
+	background-position: center;
+	position: relative;
+	left: 50%;
+	top:310px;
+	transform: translate(-50%, -50%);
+	width:97%;
+	height: 95%;
+	box-sizing: border-box;
+}
+
+.form-area1{
+	background: rgba(0,0,0,0.5);
+	background-position: center;
+	position: relative;
+	left: 50%;
+	top:250px;
+	transform: translate(-50%, -50%);
+	width:600px;
+	height: 460px;
+	box-sizing: border-box;
+	padding-left: 10px;
+}
+
+.form-area2{
+	background: rgba(0,0,0,0.5);
+	background-position: center;
+	position: relative;
+	left: 50%;
+	top:310px;
+	transform: translate(-50%, -50%);
+	width:610px;
+	height: 610px;;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+.form-area3{
+	background: rgba(0,0,0,0.5);
+	background-position: center;
+	position: relative;
+	left: 50%;
+	top:220px;
+	transform: translate(-50%, -50%);
+	width:610px;
+	height: 410px;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+.form-area4{
+	top:390px;
+	background: rgba(0,0,0,0.5);
+	background-position: center;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width:97%;
+	height: 95%;
+	box-sizing: border-box;
+}
+
+
+button a{
+	color:white;
+	text-align:center;
+	text-decoration:none;
+}
+
+a{
+	color:white;
+	text-align:center;
+	text-decoration:none;
+}
+
+button a:hover{
+	background-color:#b2beb5 ;
+}
+
+#form1{
+	color:black;
+	font-size:20px;
+	width: 350px;
+	text-align: left;
+}
+
+#form2{
+	color:black;
+	font-size:20px;
+	width: 350px;
+	height:100px;
+	text-align: left;
+	font-family: sans-serif;
+}
+
+#form3{
+	color:black;
+	font-size:5px;
+	float:center;
+}
+
+#submit1{
+	background:rgba(0, 153, 255, 0.5);
+	color:white;
+	font-size:15px;
+	text-align: center;
+}
+
+h4{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	color: white;
+}
+
+h6{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+}
+
+.productData{
+	color: white;
+	margin: 15px 10px 10px;
+	border-color: white;
+	border-style: groove;
+	width:97%;
+	padding: 6px;
+}
+
+table {
+	color: white;
+	border-collapse:collapse;
+	border-bottom:1px solid gray;
+	font-family: Tahoma,Verdana,Segoe,sans-serif;
+	width:100%;
+}
+ 
+th {
+	color: white;
+	border-bottom:1px solid gray;
+	background:none repeat scroll 0 0;
+	padding:10px;
+}
+
+tr {
+	color: white;
+	border-top:1px solid gray;
+	text-align:center;	
+}
+
+label{
+	color: white;
+	font-size:20px;
+}
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
